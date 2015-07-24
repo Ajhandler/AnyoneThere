@@ -4,5 +4,6 @@ class RoomsController < ApplicationController
 	end
 	def show
 		@room = Room.find(params[:id])
+		@post = Post.new
 	end
-end 
+end
