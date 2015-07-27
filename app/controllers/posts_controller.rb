@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 		@post = Post.new(post_params)
 		@post.user_id = current_user.id 
 		@post.save
-		redirect_to rooms_path
+		redirect_to @post.room
 	end
 
 	private
